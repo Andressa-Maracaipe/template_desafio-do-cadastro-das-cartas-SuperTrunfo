@@ -19,55 +19,90 @@ int main() {
     float pib2;
     int pontosTuristicos2;
     
-    // === CADASTRO DA PRIMEIRA CARTA ===
+    // === CADASTRO DA PRIMEIRA CARTA (SÃO PAULO) ===
     printf("=== CADASTRO DA CARTA 1 ===\n");
     
-    printf("Digite o estado (letra de A a H): ");
-    scanf(" %c", &estado1);
+    // Atribuindo os valores conforme o exemplo do comando
+    estado1 = 'A';
+    printf("Estado: A\n");
     
-    printf("Digite o código da carta (ex: A01, B03): ");
-    scanf("%s", codigo1);
+    // Cópia segura da string para o array de caracteres
+    codigo1[0] = 'A';
+    codigo1[1] = '0';
+    codigo1[2] = '1';
+    codigo1[3] = '\0'; // Caractere nulo para indicar fim da string
+    printf("Código: A01\n");
     
-    printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", cidade1); // Lê a linha inteira incluindo espaços
+    // Atribuindo o nome da cidade
+    cidade1[0] = 'S';
+    cidade1[1] = 'a';
+    cidade1[2] = 'o';
+    cidade1[3] = ' ';
+    cidade1[4] = 'P';
+    cidade1[5] = 'a';
+    cidade1[6] = 'u';
+    cidade1[7] = 'l';
+    cidade1[8] = 'o';
+    cidade1[9] = '\0';
+    printf("Nome da Cidade: Sao Paulo\n");
     
-    printf("Digite a população da cidade: ");
-    scanf("%d", &populacao1);
+    populacao1 = 12325000;
+    printf("Populacao: 12325000\n");
     
-    printf("Digite a área da cidade (em km²): ");
-    scanf("%f", &area1);
+    area1 = 1521.11;
+    printf("Area: 1521.11 km2\n");
     
-    printf("Digite o PIB da cidade (em bilhões de reais): ");
-    scanf("%f", &pib1);
+    pib1 = 699.28;
+    printf("PIB: 699.28 bilhoes de reais\n");
     
-    printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &pontosTuristicos1);
+    pontosTuristicos1 = 50;
+    printf("Numero de Pontos Turisticos: 50\n");
     
     printf("\n"); // Linha em branco para separar os cadastros
     
-    // === CADASTRO DA SEGUNDA CARTA ===
+    // === CADASTRO DA SEGUNDA CARTA (RIO DE JANEIRO) ===
     printf("=== CADASTRO DA CARTA 2 ===\n");
     
-    printf("Digite o estado (letra de A a H): ");
-    scanf(" %c", &estado2);
+    // Atribuindo os valores conforme o exemplo do comando
+    estado2 = 'B';
+    printf("Estado: B\n");
     
-    printf("Digite o código da carta (ex: A01, B03): ");
-    scanf("%s", codigo2);
+    // Cópia segura da string para o array de caracteres
+    codigo2[0] = 'B';
+    codigo2[1] = '0';
+    codigo2[2] = '2';
+    codigo2[3] = '\0'; // Caractere nulo para indicar fim da string
+    printf("Código: B02\n");
     
-    printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", cidade2);
+    // Atribuindo o nome da cidade
+    cidade2[0] = 'R';
+    cidade2[1] = 'i';
+    cidade2[2] = 'o';
+    cidade2[3] = ' ';
+    cidade2[4] = 'd';
+    cidade2[5] = 'e';
+    cidade2[6] = ' ';
+    cidade2[7] = 'J';
+    cidade2[8] = 'a';
+    cidade2[9] = 'n';
+    cidade2[10] = 'e';
+    cidade2[11] = 'i';
+    cidade2[12] = 'r';
+    cidade2[13] = 'o';
+    cidade2[14] = '\0';
+    printf("Nome da Cidade: Rio de Janeiro\n");
     
-    printf("Digite a população da cidade: ");
-    scanf("%d", &populacao2);
+    populacao2 = 6748000;
+    printf("Populacao: 6748000\n");
     
-    printf("Digite a área da cidade (em km²): ");
-    scanf("%f", &area2);
+    area2 = 1200.25;
+    printf("Area: 1200.25 km2\n");
     
-    printf("Digite o PIB da cidade (em bilhões de reais): ");
-    scanf("%f", &pib2);
+    pib2 = 300.50;
+    printf("PIB: 300.50 bilhoes de reais\n");
     
-    printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &pontosTuristicos2);
+    pontosTuristicos2 = 30;
+    printf("Numero de Pontos Turisticos: 30\n");
     
     printf("\n"); // Linha em branco para separar cadastro da exibição
     
@@ -98,3 +133,4 @@ int main() {
     
     return 0;
 }
+ 
